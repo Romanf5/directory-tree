@@ -1,0 +1,68 @@
+.m-t-5 {
+    margin-top: 5px;
+}
+
+.m-t-10 {
+    margin-top: 10px;
+}
+
+.m-t-20 {
+    margin-top: 20px;
+}
+
+header {
+    height: 50px;
+    background: #e6e6e6;
+}
+
+.sign-btns {
+    margin-top: 7px;
+    height: 30px;
+    text-align: right;
+}
+
+.header-link {
+    color: #fff;
+}
+
+.header-link:hover {
+    color: #f8f8f8;
+    text-decoration: none;
+}
+
+#dashboard-header {
+    height: 70px;
+    padding: 15px;
+    font-size: 16px;
+    color: #f8f8f8;
+    background-color: dodgerblue;
+}
+
+#dashboard-header .logo {
+    color: #fff;
+    font-size: 28px;
+}
+
+#register-user ul>li {
+    color: red;
+}
+
+#directory-list {
+    font-size: 18px;
+}
+
+#directory-list li {
+    list-style: none;
+}
+
+#directory-list .directory {
+    cursor: pointer;
+    color: #398439;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#directory-list .file {
+    cursor: pointer;
+    color: #286090;
+}

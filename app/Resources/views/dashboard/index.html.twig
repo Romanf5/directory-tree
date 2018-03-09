@@ -1,0 +1,28 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div class="container">
+        <div class="row">
+            <header id="dashboard-header" class="col-md-12">
+                <div class="col-md-11 logo">ED</div>
+                <div class="col-md-1">
+                    <a class="btn btn-default" href="{{ path('logout') }}">Logout</a>
+                </div>
+            </header>
+            <section class="col-md-12">
+                <h2>Welcome to Dashboard</h2>
+                <div>
+                    <ul id="directory-list">
+                        {% for item in list %}
+                            {% if item.type == 'dir' %}
+                                <li><span class="js-item directory" data-path="{{ item.path }}" data-directory="{{ item.name }}">{{ item.name }}</span></li>
+                            {% else %}
+                                <li><span class="file">{{ item.name }}</span></li>
+                            {% endif %}
+                        {% endfor %}
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </div>
+{% endblock %}
